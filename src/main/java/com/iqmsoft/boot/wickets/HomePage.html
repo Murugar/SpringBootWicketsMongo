@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <html xmlns="http://www.w3.org/1999/xhtml"
 	xmlns:wicket="http://wicket.apache.org">
+
+<head>
 <link rel="stylesheet"
 	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
@@ -12,40 +14,51 @@
 <script
 	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
-<head>
 <meta charset="utf-8" />
 <title>Spring Boot Wickets MongoDB</title>
 </head>
 <body>
 	<wicket:extend>
 		<div class="container">
-			<br /> <br />
-			<h2 class="text-success text-center" wicket:id="test1"></h2>
-			<h3 class="text-primary text-center" wicket:id="test2"></h3>
-			<h4 class="text-warning text-center" wicket:id="test3"></h4>
-			<h5 class="text-danger text-center" wicket:id="size"></h5>
+			<div class="panel panel-primary">
+				<div class="panel-heading">Home</div>
+				<div class="panel-body">
+
+
+					<br /> <br />
+					<h2 class="text-success text-center" wicket:id="test1"></h2>
+					<h3 class="text-primary text-center" wicket:id="test2"></h3>
+					<h4 class="text-warning text-center" wicket:id="test3"></h4>
+					<h5 class="text-danger text-center" wicket:id="size"></h5>
+
+					<br />
+
+					<h4 class="text-info text-center">Users List</h4>
+					<br />
+
+					<table class="table table-striped table-bordered">
+						<thead class="table-inverse">
+							<tr>
+								<th class="text-danger text-center">Name</th>
+								<th class="text-danger text-center">Password</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr class="table-success" scope="row" wicket:id="listview">
+								<td class="text-success text-center" wicket:id="user"></td>
+								<td class="text-success text-center" wicket:id="pwd"></td>
+							</tr>
+						</tbody>
+					</table>
+					<h2></h2>
+					<wicket:child />
+				</div>
+				
+				<div class="panel-footer text-center text-danger">
+				  IQMSOFT
+				</div>
+			</div>
 			
-			<br/>
-			
-			<h4 class="text-info text-center">Users List</h4>
-			<br/>
-		
-			<table class="table table-striped table-bordered">
-				<thead class="table-inverse">
-					<tr>
-						<th class="text-danger text-center" >Name</th>
-						<th class="text-danger text-center" >Password</th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr class="table-success" scope="row" wicket:id="listview">
-						<td class="text-success text-center" wicket:id="user"></td>
-						<td class="text-success text-center" wicket:id="pwd"></td>
-					</tr>
-				</tbody>
-			</table>
-			<h2></h2>
-			<wicket:child />
 		</div>
 	</wicket:extend>
 </body>

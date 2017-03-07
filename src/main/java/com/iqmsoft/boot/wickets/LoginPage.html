@@ -1,22 +1,51 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<html xmlns="http://www.w3.org/1999/xhtml" xmlns:wicket="http://wicket.apache.org">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:wicket="http://wicket.apache.org">
 <head>
-    <meta charset="UTF-8" />
-    <title>Spring Boot Wickets</title>
+<meta charset="UTF-8" />
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+	<!-- jQuery library -->
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<title>Spring Boot Wickets</title>
 </head>
 <body>
-    <h2>Login</h2>
-    <form wicket:id="loginForm">
-        <div wicket:id="feedback"></div>
-        <p>
-            <label>Username</label>
-            <input type="text" wicket:id="username" />
-        </p>
-        <p>
-            <label>Password</label>
-            <input type="password" wicket:id="password" />
-        </p>
-        <input type="submit" value="SignOn" />
-    </form>
+
+	<div class="container">
+		<div class="panel panel-primary">
+			<div class="panel-heading text-center"><h3 class="text-center">Spring Boot Wickets
+			</h3></div>
+			<div class="panel-body">
+
+				<h4 class="text-info text-center">Login</h4>
+				<br />
+				<form wicket:id="loginForm">
+					<div wicket:id="feedback"></div>
+					<div class="form-group">
+						<p>
+							<label>Username</label> <input type="text" class="form-control"
+								wicket:id="username" />
+						</p>
+					</div>
+					<div class="form-group">
+						<p>
+							<label>Password</label> <input type="password"
+								class="form-control" wicket:id="password" />
+						</p>
+					</div>
+					<button type="submit" class="btn btn-default">SignOn</button>
+				</form>
+
+			</div>
+			<div class="panel-footer text-center text-danger">IQMSOFT</div>
+		</div>
+	</div>
 </body>
 </html>
