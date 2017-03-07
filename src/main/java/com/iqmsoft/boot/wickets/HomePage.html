@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:wicket="http://wicket.apache.org">
+<head>
+<meta charset="utf-8" />
+<title>Spring Boot Wickets MongoDB</title>
+</head>
+<body>
+	<wicket:extend>
+		<div class="container">
+			<br /> <br />
+			<h2 wicket:id="test1"></h2>
+			<h3 wicket:id="test2"></h3>
+			<h4 wicket:id="test3"></h4>
+         	<h5 wicket:id="size"></h5>
+			<h4>User List</h4>
+			<table style="border-collapse: separate; border-spacing: 5px;">
+				<thead>
+					<tr>
+						<th rowspan="2">Name</th>
+						<th colspan="2">Password</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr wicket:id="listview" >
+						<td wicket:id="user"></td>
+						<td wicket:id="pwd"></td>
+					</tr>
+				</tbody>
+			</table>
+			<h2></h2>
+			<wicket:child />
+		</div>
+	</wicket:extend>
+</body>
+</html>
